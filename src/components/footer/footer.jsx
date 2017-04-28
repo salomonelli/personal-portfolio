@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './footer.css';
+import FlatButton from 'material-ui/FlatButton';
 
 
 class FooterComponent extends Component {
@@ -14,7 +15,8 @@ class FooterComponent extends Component {
     render() {
         return (
           <div className="footer">
-            
+
+            <FlatButton label="Back to top" />
           </div>
         );
     }
