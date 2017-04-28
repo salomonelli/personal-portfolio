@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #212121 !important;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+h6 {
+    font-weight: 500;
+}
+
+p, span {
+    font-weight: 200;
+}
