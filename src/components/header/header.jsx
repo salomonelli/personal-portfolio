@@ -21,8 +21,7 @@ class HeaderComponent extends Component {
           <div style={{"height": this.state.height}}>
             <div className="header">
                 <h3>Sara Steiert</h3>
-                <h6>Agile Software Developer</h6>
-
+                <h6>Software Developer</h6>
             </div>
             <div className="scroll-down-btn">
               <FloatingActionButton mini={true} backgroundColor="#A80202">
