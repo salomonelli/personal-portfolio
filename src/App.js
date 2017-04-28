@@ -6,6 +6,7 @@ import './App.css';
 
 import HeaderComponent from './components/header/header';
 import IntroductionComponent from './components/introduction/introduction';
+import ContactComponent from './components/contact/contact';
 
 class App extends Component {
   render() {
@@ -17,6 +18,9 @@ class App extends Component {
             </div>
             <div className="section colored">
               <IntroductionComponent></IntroductionComponent>
+            </div>
+            <div className="section">
+              <ContactComponent></ContactComponent>
             </div>
         </div>
       </MuiThemeProvider>

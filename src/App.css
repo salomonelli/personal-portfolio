@@ -1,4 +1,7 @@
-.section {}
+.section {
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
 .section.colored {
     background: #E0D09E;

@@ -15,5 +15,10 @@ h6 {
 }
 
 p, span {
-    font-weight: 200;
+    font-weight: 300;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

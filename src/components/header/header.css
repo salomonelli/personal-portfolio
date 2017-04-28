@@ -3,7 +3,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    width: 90%;
 }
 
 .scroll-down-btn {
@@ -11,5 +11,5 @@
     position: absolute;
     bottom: 20px;
     text-align: center;
-    width: 100%;
+    width: 90%;
 }

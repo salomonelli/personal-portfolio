@@ -16,7 +16,7 @@ class IntroductionComponent extends Component {
         return (
           <div className="introduction">
             <Avatar src="avatar.jpg" size={150}/>
-            <p>
+            <p className="introduction-text">
               Loves JavaScript, cats and eating. Professional Software Developer.
               </p>
           </div>
