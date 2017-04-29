@@ -19,66 +19,69 @@ class ContactComponent extends Component {
     async componentDidMount() {}
 
     componentWillUnmount() {}
-    
+
     validateString(str) {
         if (!str || str < 1)
             return false;
         return true;
     }
 
+    /**
+     * @throws
+     */
     validateForm() {
         if (!this.validateString(this.state.name))
-            return 'Please enter your name.'
+            throw new Error('Please enter your name.');
         if (!isEmail(this.state.email))
-            return 'Please enter your e-mail address.'
+            throw new Error('Please enter a valid e-mail address.');
         if (!this.validateString(this.state.message))
-            return 'Please enter a message.'
-        return null;
-    }
+            throw new Error('Please enter a message.');
+        }
 
     onSubmit() {
-        const err = this.validateForm();
-        this.setState({errorMessage: err});
-        if (!err) {
-          this.setState({successMessage: 'Your message has been sent.'})
+        try {
+            this.validateForm();
+        } catch (err) {
+            this.setState({errorMessage: err.toString()});
         }
+        this.setState({successMessage: 'Your message has been sent.'});
+        console.dir(this.state);
     }
     onUpdateField(field, event) {
-        this.state[field] = event.target.value;
+        console.log('UPDATE FIELD');
+        this.setState({[field]: event.target.value});
+        console.dir(this.state);
     }
 
     render() {
         return (
             <div className="contact">
-              <p className="headline">Contact</p>
+                <p className="headline">Contact</p>
                 <p>Are you nosy? Then write me a message:</p>
                 <TextField hintText="Name" floatingLabelText="Name" style={{
                     "width": "100%"
                 }} floatingLabelFocusStyle={{
                     "color": "#A80202"
                 }} underlineFocusStyle={{
-                    "border-color": "#A80202"
+                    "borderColor": "#A80202"
                 }} onChange={e => this.onUpdateField('name', e)}/>
                 <TextField hintText="E-mail" floatingLabelText="E-mail" type="email" style={{
                     "width": "100%"
                 }} floatingLabelFocusStyle={{
                     "color": "#A80202"
                 }} underlineFocusStyle={{
-                    "border-color": "#A80202"
+                    "borderColor": "#A80202"
                 }} onChange={e => this.onUpdateField('email', e)}/>
                 <TextField hintText="Your message" floatingLabelText="Your message" style={{
                     "width": "100%"
                 }} multiLine={true} rows={2} floatingLabelFocusStyle={{
                     "color": "#A80202"
                 }} underlineFocusStyle={{
-                    "border-color": "#A80202"
-                }} onChange={e => this.onUpdateField('message', e)}/>
-                {this.state.errorMessage != null &&
-                  <p className="error-message message">{this.state.errorMessage}</p>
-                }
-                {this.state.successMessage != null &&
-                  <p className="success-message message">{this.state.successMessage}</p>
-                }
+                    "borderColor": "#A80202"
+                }} onChange={e => this.onUpdateField('message', e)}/> {this.state.errorMessage != null && <p className="error-message message">{this.state.errorMessage}</p>
+}
+                {this.state.successMessage != null && <p className="success-message message">{this.state.successMessage}</p>
+}
                 <div className="contact-btn">
                     <RaisedButton label="Send message" onClick={this.onSubmit.bind(this)} backgroundColor="#A80202" labelColor="#ffffff"/>
                 </div>
