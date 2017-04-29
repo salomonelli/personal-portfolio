@@ -4,6 +4,7 @@ import './roboto.css';
 import './App.css';
 
 import ProgressComponent from './components/progress/progress';
+import BrowserDetectComponent from './components/browser-detect/browser-detect';
 import HeaderComponent from './components/header/header';
 import IntroductionComponent from './components/introduction/introduction';
 import TimelineComponent from './components/timeline/timeline';
@@ -20,6 +21,7 @@ class App extends Component {
         return (
             <MuiThemeProvider>
                 <div className="App">
+                    <BrowserDetectComponent></BrowserDetectComponent>
                     <ProgressComponent></ProgressComponent>
                     <div className="section header-section">
                         <div className="section-container">
