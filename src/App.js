@@ -11,6 +11,7 @@ import IntroductionComponent from './components/introduction/introduction';
 import TimelineComponent from './components/timeline/timeline';
 import ProgrammingComponent from './components/programming/programming';
 import AgileComponent from './components/agile/agile';
+import DesignComponent from './components/design/design';
 import ContactComponent from './components/contact/contact';
 import FooterComponent from './components/footer/footer';
 
@@ -37,8 +38,7 @@ class App extends Component {
                       <AgileComponent></AgileComponent>
                     </div>
                     <div className="section colored">
-                      <p>design</p>
-                      <AgileComponent></AgileComponent>
+                      <DesignComponent></DesignComponent>
                     </div>
                     <div className="section">
                         <ContactComponent></ContactComponent>
