@@ -23,8 +23,10 @@ class ProgressComponent extends Component {
     }
 
     setHeights() {
-      this.state.domHeight = $('body').height();
-      this.state.windowHeight = $(window).height();
+      this.setState({
+        domHeight: $('body').height(),
+        windowHeight: $(window).height()
+      });
     }
 
     handleScroll(){
@@ -39,7 +41,6 @@ class ProgressComponent extends Component {
 
     render() {
         let progress = this.state.completed;
-        console.log(progress);
         return (
           <div className="progress">
             <div

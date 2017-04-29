@@ -1,26 +1,16 @@
 import React, {Component} from 'react';
 import {
     Card,
-    CardActions,
     CardHeader,
-    CardMedia,
-    CardTitle,
+    CardActions,
     CardText
 } from 'material-ui/Card';
-import Avatar from 'material-ui/Avatar';
 import FlatButton from 'material-ui/FlatButton';
 
 import './code-github.css';
 
 class CodeGithubComponent extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    async componentDidMount() {}
-
-    componentWillUnmount() {}
-
+  
     render() {
         return (
             <div className="code-github">

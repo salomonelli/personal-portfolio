@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ArrowIcon from 'material-ui/svg-icons/hardware/keyboard-arrow-down';
-import Avatar from 'material-ui/Avatar';
 const scrollTo = require('scroll-to');
 import './header.css';
 

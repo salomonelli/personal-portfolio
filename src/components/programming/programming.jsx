@@ -1,19 +1,9 @@
 import React, {Component} from 'react';
-import Chip from 'material-ui/Chip';
-import Avatar from 'material-ui/Avatar';
 import Paper from 'material-ui/Paper';
 import './programming.css';
 
 class ProgrammingComponent extends Component {
-    constructor(props) {
-        super(props);
-
-    }
-
-    async componentDidMount() {}
-
-    componentWillUnmount() {}
-
+  
     render() {
         const style = {
             width: '100%',

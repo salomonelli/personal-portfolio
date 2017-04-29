@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Subheader from 'material-ui/Subheader';
-import logo from './logo.svg';
 import './roboto.css';
 import './App.css';
 

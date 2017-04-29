@@ -3,13 +3,6 @@ import './agile-quote.css';
 
 
 class AgileQuoteComponent extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    async componentDidMount() {}
-
-    componentWillUnmount() {}
 
     render() {
         return (

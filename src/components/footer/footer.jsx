@@ -1,19 +1,10 @@
 import React, {Component} from 'react';
 import './footer.css';
 import FlatButton from 'material-ui/FlatButton';
-import {BottomNavigation, BottomNavigationItem} from 'material-ui/BottomNavigation';
-import IconLocationOn from 'material-ui/svg-icons/communication/location-on';
 const scrollTo = require('scroll-to');
 
 class FooterComponent extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    async componentDidMount() {}
-
-    componentWillUnmount() {}
-
+    
     onScrollToTop() {
         scrollTo(0, 0, {
             ease: 'out-bounce',

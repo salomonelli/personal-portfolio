@@ -6,13 +6,6 @@ import './design.css';
 
 
 class DesignComponent extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    async componentDidMount() {}
-
-    componentWillUnmount() {}
 
     render() {
         return (
