@@ -1,3 +1,33 @@
+/*
+  Color palette: http://www.colourlovers.com/palette/809495/sure
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #212121 !important;
+  overflow-x: hidden;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+h6 {
+  font-weight: 500;
+}
+
+p, span {
+  font-weight: 300;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .section {
   padding-left: 5%;
   padding-right: 5%;
