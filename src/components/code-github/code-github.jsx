@@ -22,7 +22,7 @@ class CodeGithubComponent extends Component {
                     avatar="github.png"
                   />
                 <CardText>
-                        This application is made with React and Material UI. Check out the Code on Github.
+                        This application is made with React and Material UI. Check out the code on Github.
                     </CardText>
                     <CardActions>
                         <FlatButton label="View on github" href="https://github.com/salomonelli/personal-portfolio" target="_blank"/>

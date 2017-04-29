@@ -22,6 +22,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div className="App">
+          <BrowserDetectComponent></BrowserDetectComponent>
           <Helmet>
             <meta charSet="utf-8"/>
             <title>Sara Steiert - Software Developer</title>
