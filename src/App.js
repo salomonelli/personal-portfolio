@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import DocumentTitle from 'react-document-title';
+import {Helmet} from 'react-helmet';
 import './roboto.css';
 import './App.css';
 
@@ -20,11 +20,13 @@ import FooterComponent from './components/footer/footer';
 class App extends Component {
     render() {
         return (
-          <DocumentTitle title="Sara Steiert">
-
-
             <MuiThemeProvider>
                 <div className="App">
+                  <Helmet>
+                      <meta charSet="utf-8" />
+                      <title>Sara Steiert - Software Developer</title>
+                      <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+                  </Helmet>
                     <ProgressComponent></ProgressComponent>
                     <div className="section header-section">
                         <div className="section-container header-component">
@@ -72,13 +74,12 @@ class App extends Component {
                         </div>
                     </div>
                     <div className="section colored">
-                        <div className="section-container">
+                        <div className="section-container footer-component">
                             <FooterComponent></FooterComponent>
                         </div>
                     </div>
                 </div>
             </MuiThemeProvider>
-            </DocumentTitle>
         );
     }
 }

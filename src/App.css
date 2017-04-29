@@ -16,6 +16,10 @@
   padding: 0;
 }
 
+.section-container.footer-component {
+  padding: 0;
+}
+
 .section.colored {
   background: #D8AB94;
   /* background: #EBEBEB; */
