@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.cce34a49.css",
-  "main.css.map": "static/css/main.cce34a49.css.map",
-  "main.js": "static/js/main.4d9bd53a.js",
-  "main.js.map": "static/js/main.4d9bd53a.js.map",
+  "main.css": "static/css/main.3c262b69.css",
+  "main.css.map": "static/css/main.3c262b69.css.map",
+  "main.js": "static/js/main.69f845fe.js",
+  "main.js.map": "static/js/main.69f845fe.js.map",
   "static/media/Roboto-Black.eot": "static/media/Roboto-Black.2a82f89b.eot",
   "static/media/Roboto-Black.svg": "static/media/Roboto-Black.ab04c761.svg",
   "static/media/Roboto-Black.ttf": "static/media/Roboto-Black.44236ad5.ttf",
@@ -62,6 +62,5 @@
   "static/media/Roboto-ThinItalic.svg": "static/media/Roboto-ThinItalic.21e9a2e5.svg",
   "static/media/Roboto-ThinItalic.ttf": "static/media/Roboto-ThinItalic.11b5cc95.ttf",
   "static/media/Roboto-ThinItalic.woff": "static/media/Roboto-ThinItalic.58829329.woff",
-  "static/media/Roboto-ThinItalic.woff2": "static/media/Roboto-ThinItalic.8a2c1a5d.woff2",
-  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
+  "static/media/Roboto-ThinItalic.woff2": "static/media/Roboto-ThinItalic.8a2c1a5d.woff2"
 }
