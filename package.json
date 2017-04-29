@@ -12,7 +12,8 @@
     "react-tap-event": "1.0.3",
     "react-tap-event-plugin": "2.0.1",
     "roboto-fontface": "0.7.0",
-    "scroll-to": "0.0.2"
+    "scroll-to": "0.0.2",
+    "validator": "^7.0.0"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import isEmail from 'validator/lib/isEmail';
 import './contact.css';
 
 class ContactComponent extends Component {
@@ -18,12 +19,7 @@ class ContactComponent extends Component {
     async componentDidMount() {}
 
     componentWillUnmount() {}
-
-    validateEmail(email) {
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(email);
-    }
-
+    
     validateString(str) {
         if (!str || str < 1)
             return false;
@@ -33,7 +29,7 @@ class ContactComponent extends Component {
     validateForm() {
         if (!this.validateString(this.state.name))
             return 'Please enter your name.'
-        if (!this.validateEmail(this.state.email))
+        if (!isEmail(this.state.email))
             return 'Please enter your e-mail address.'
         if (!this.validateString(this.state.message))
             return 'Please enter a message.'
