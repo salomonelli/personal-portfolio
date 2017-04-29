@@ -12,3 +12,19 @@
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+.error-message {
+    border-left: 5px solid #A80202;
+}
+
+.message {
+    background: #EBEBEB;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.success-message {
+    border-left: 5px solid #558B2F;
+}
