@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './square-animation.css';
 
+// http://codepen.io/wontem/pen/YXzVyr
 class SquareAnimationComponent extends Component {
 
   render() {
