@@ -1,5 +1,7 @@
 .quote {
     position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .quote-content {
@@ -10,10 +12,10 @@
 
 .quote-marks {
     font-family: Arial;
-    font-size: 100px;
+    font-size: 200px;
     position: absolute;
     top: -19px;
-    opacity: 0.3;
+    opacity: 0.1;
 }
 
 .quote-author {

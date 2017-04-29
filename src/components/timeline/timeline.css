@@ -1,5 +1,10 @@
 .timeline {
-    padding-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.timeline p.headline {
+    margin-top: 0;
 }
 
 .timeline-entry {
