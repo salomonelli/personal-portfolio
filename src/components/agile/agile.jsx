@@ -14,15 +14,10 @@ class AgileComponent extends Component {
     render() {
         return (
           <div className="agile">
-            <p className="quote">
-              <span className="quote-marks">&ldquo;</span>
-              <span className="quote-content">
-                Perfection is not attainable, but if we chase perfection we can catch excellence.
-              </span>
-              <span className="quote-author">- Vince Lombardi</span>
-            </p>
-
-              <p>blabla</p>
+          
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              </p>
           </div>
         );
     }
