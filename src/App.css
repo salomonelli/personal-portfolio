@@ -37,3 +37,7 @@ p.headline {
 .header-section {
   background: #16151C;
 }
+
+p.text-justify {
+  text-align: justify;
+}
