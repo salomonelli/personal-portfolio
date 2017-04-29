@@ -11,9 +11,15 @@ class DesignComponent extends Component {
         return (
           <div className="design">
             <p className="headline">User Experience and Design</p>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            <p className="text-justify">
+              Through my parents business @fotolia, at the age of 13, I fell in love with Photoshop.
+
+              Ever since, I tried to make everything fancy.
+
+              Nowadays, with a user-centered mindset, I try to develop intuitive, mobile and content first applications.
+
             </p>
+
               <div className="design-checkbox">
                 <Checkbox
                   checkedIcon={<ActionFavorite />}
