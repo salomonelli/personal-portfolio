@@ -65,13 +65,16 @@ class TimelineComponent extends Component {
         return (
             <div className="timeline">
               <p>Working experience</p>
-                  <Card expanded={this.state.expanded1} onExpandChange={this.handleExpandChange}>
-                      <CardHeader title="URL Avatar" subtitle="Subtitle"
-                        actAsExpander={true} showExpandableButton={true}/>
-                      <CardText expandable={true}>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-                      </CardText>
-                  </Card>
+                  <div className="timeline-entry">
+                    <Card expanded={this.state.expanded1} onExpandChange={this.handleExpandChange}>
+                        <CardHeader title="URL Avatar" subtitle="Subtitle"
+                          actAsExpander={true} showExpandableButton={true}/>
+                        <CardText expandable={true}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+                        </CardText>
+                    </Card>
+                  </div>
+                  <div className="timeline-entry">
                   <Card expanded={this.state.expanded2} onExpandChange={this.handleExpandChange2}>
                       <CardHeader title="URL Avatar" subtitle="Subtitle"
                         actAsExpander={true} showExpandableButton={true}/>
@@ -79,6 +82,8 @@ class TimelineComponent extends Component {
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
                       </CardText>
                   </Card>
+                </div>
+                <div className="timeline-entry">
                   <Card expanded={this.state.expanded3} onExpandChange={this.handleExpandChange3}>
                       <CardHeader title="URL Avatar" subtitle="Subtitle"
                         actAsExpander={true} showExpandableButton={true}/>
@@ -86,7 +91,7 @@ class TimelineComponent extends Component {
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
                       </CardText>
                   </Card>
-
+                </div>
             </div>
         );
     }

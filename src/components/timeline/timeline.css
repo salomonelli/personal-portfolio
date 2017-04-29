@@ -1,3 +1,11 @@
 .timeline {
     padding-bottom: 20px;
 }
+
+.timeline-entry {
+    margin-bottom: 10px;
+}
+
+.timeline-entry:last-of-type {
+    margin-bottom: 0px;
+}
