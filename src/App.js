@@ -34,7 +34,6 @@ class App extends Component {
                       <ProgrammingComponent></ProgrammingComponent>
                     </div>
                     <div className="section">
-                      <p>agile</p>
                       <AgileComponent></AgileComponent>
                     </div>
                     <div className="section colored">
