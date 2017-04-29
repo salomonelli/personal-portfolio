@@ -41,7 +41,6 @@ class HeaderComponent extends Component {
         return (
           <div className="header-wrapper" style={{"height": this.state.height}}>
             <SquareAnimationComponent></SquareAnimationComponent>
-            <div className="cover"></div>
             <div className="header">
                 <h3>Sara Steiert</h3>
                 <h6>Software Developer</h6>

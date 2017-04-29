@@ -7,13 +7,6 @@
   color: white;
 }
 
-.cover {
-  height: 100%;
-  background: rgba(22, 21, 28, 0.76);
-  width: 100%;
-  position: absolute;
-}
-
 .header-wrapper {
   position: relative;
 }
