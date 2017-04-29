@@ -3,7 +3,7 @@ import Paper from 'material-ui/Paper';
 import './programming.css';
 
 class ProgrammingComponent extends Component {
-  
+
     render() {
         const style = {
             width: '100%',
@@ -13,6 +13,7 @@ class ProgrammingComponent extends Component {
 
         return (
             <div className="programming">
+              <p className="headline"> Programming skills</p>
                 <div className="programming-console">
                     <Paper zDepth={3} style={style}>
                         <div className="console-header">

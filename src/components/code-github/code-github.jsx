@@ -10,10 +10,11 @@ import FlatButton from 'material-ui/FlatButton';
 import './code-github.css';
 
 class CodeGithubComponent extends Component {
-  
+
     render() {
         return (
             <div className="code-github">
+              <p className="headline">Github Repository</p>
                 <Card>
                   <CardHeader
                     subtitle="Github Repository"

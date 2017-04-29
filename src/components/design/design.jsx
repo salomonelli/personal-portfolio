@@ -10,7 +10,7 @@ class DesignComponent extends Component {
     render() {
         return (
           <div className="design">
-            <p className="title">User Experience and Design</p>
+            <p className="headline">User Experience and Design</p>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             </p>

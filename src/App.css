@@ -15,6 +15,15 @@
     /* background: #EBEBEB; */
 }
 
+p.headline {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 10pt;
+    opacity: 0.8;
+}
+
 .header-section {
     background: linear-gradient(270deg, #282828, #16151C);
     background-size: 400% 400%;
