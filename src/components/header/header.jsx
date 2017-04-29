@@ -13,14 +13,21 @@ class HeaderComponent extends Component {
         };
     }
 
-    async componentDidMount() {
+    updateDimensions() {
       this.setState({
         height:window.innerHeight+'px',
         scrollTo: window.innerHeight
       });
     }
 
-    componentWillUnmount() {}
+    async componentDidMount() {
+      window.addEventListener("resize", this.updateDimensions.bind(this));
+      this.updateDimensions();
+    }
+
+    componentWillUnmount() {
+      window.removeEventListener("resize", this.updateDimensions.bind(this));
+    }
 
     onScrollToIntro() {
         scrollTo(0, this.state.scrollTo, {
