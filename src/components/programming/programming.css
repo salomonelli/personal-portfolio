@@ -1,10 +1,59 @@
 .programming {
     padding-bottom: 20px;
+    padding-top: 20px;
     display: inline-block;
+    width: 100%;
 }
 
 .programming-skill {
     float: left;
     margin-right: 10px;
     margin-top: 10px;
+}
+
+.console-header {
+    background: #CFD8DC;
+    height: 20px;
+}
+
+.console-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 5px;
+}
+
+.console-buttons {
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.btn-1 {
+    background: black;
+}
+
+.btn-2 {
+    background: black;
+}
+
+.btn-3 {
+    background: black;
+}
+
+ul {
+    list-style: none;
+    color: #EFEBE9;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.no-top-padding {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 0px;
 }

@@ -10,6 +10,7 @@ import HeaderComponent from './components/header/header';
 import IntroductionComponent from './components/introduction/introduction';
 import TimelineComponent from './components/timeline/timeline';
 import ProgrammingComponent from './components/programming/programming';
+import AgileComponent from './components/agile/agile';
 import ContactComponent from './components/contact/contact';
 import FooterComponent from './components/footer/footer';
 
@@ -19,7 +20,7 @@ class App extends Component {
             <MuiThemeProvider>
                 <div className="App">
                     <ProgressComponent></ProgressComponent>
-                    <div className="section">
+                    <div className="section header-section">
                         <HeaderComponent></HeaderComponent>
                     </div>
                     <div className="section colored">
@@ -32,9 +33,17 @@ class App extends Component {
                       <ProgrammingComponent></ProgrammingComponent>
                     </div>
                     <div className="section">
-                        <ContactComponent></ContactComponent>
+                      <p>agile</p>
+                      <AgileComponent></AgileComponent>
                     </div>
                     <div className="section colored">
+                      <p>design</p>
+                      <AgileComponent></AgileComponent>
+                    </div>
+                    <div className="section">
+                        <ContactComponent></ContactComponent>
+                    </div>
+                    <div className="section">
                         <FooterComponent></FooterComponent>
                     </div>
                 </div>
