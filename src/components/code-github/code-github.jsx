@@ -26,15 +26,15 @@ class CodeGithubComponent extends Component {
             <div className="code-github">
                 <Card>
                   <CardHeader
-                    title="URL Avatar"
-                    subtitle="asdasd"
+                    subtitle="Github Repository"
+                    title="salomonelli/personal-portfolio"
                     avatar="github.png"
                   />
                 <CardText>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa.
+                        This application is made with React and Material UI. Check out the Code on Github.
                     </CardText>
                     <CardActions>
-                        <FlatButton label="View on github" href="http://www.google.de" target="_blank"/>
+                        <FlatButton label="View on github" href="https://github.com/salomonelli/personal-portfolio" target="_blank"/>
                     </CardActions>
                 </Card>
             </div>

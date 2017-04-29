@@ -50,7 +50,7 @@ class App extends Component {
                     <div className="section">
                         <ContactComponent></ContactComponent>
                     </div>
-                    <div className="section">
+                    <div className="section colored">
                         <FooterComponent></FooterComponent>
                     </div>
                 </div>

@@ -3,3 +3,13 @@
     padding-bottom: 20px;
     padding-top: 20px;
 }
+
+.link-list {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.link-list a {
+    color: rgba(22, 21, 28, 0.73);
+    text-decoration: none;
+}
