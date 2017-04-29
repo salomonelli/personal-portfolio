@@ -14,3 +14,14 @@
     text-align: center;
     width: 90%;
 }
+
+.header h6 {
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header h3 {
+    text-transform: uppercase;
+    letter-spacing: 9px;
+}
