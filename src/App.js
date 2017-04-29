@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {Helmet} from 'react-helmet';
-import './roboto.css';
+import 'roboto-npm-webfont';
 import './App.css';
 
 import ProgressComponent from './components/progress/progress';

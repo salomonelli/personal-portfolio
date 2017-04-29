@@ -52,6 +52,14 @@ class DesignComponent extends Component {
                 label="Blender"
               />
           </div>
+          <div className="design-checkbox">
+            <Checkbox
+              checkedIcon={<ActionFavorite />}
+              uncheckedIcon={<ActionFavoriteBorder />}
+              iconStyle={{"fill":"#A80202"}}
+              label="Digital Painting"
+            />
+        </div>
 
           </div>
         );
