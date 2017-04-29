@@ -4,6 +4,7 @@
     top: 50%;
     transform: translateY(-50%);
     width: 90%;
+    color: white;
 }
 
 .scroll-down-btn {

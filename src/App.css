@@ -4,13 +4,17 @@
 }
 
 .section.colored {
-    background: #E0D09E;
+    background: #D8AB94;
+    /* background: #EBEBEB; */
 }
 
 .header-section {
-    -webkit-animation: AnimationName 0s ease infinite;
-    -moz-animation: AnimationName 0s ease infinite;
-    animation: AnimationName 0s ease infinite;
+    background: linear-gradient(270deg, #0D0D0D, #16151C);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 22s ease infinite;
+    -moz-animation: AnimationName 22s ease infinite;
+    -o-animation: AnimationName 22s ease infinite;
+    animation: AnimationName 22s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
@@ -26,6 +30,18 @@
 }
 
 @-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-o-keyframes AnimationName {
     0% {
         background-position: 0% 50%
     }
