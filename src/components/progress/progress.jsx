@@ -32,7 +32,7 @@ class ProgressComponent extends Component {
     handleScroll(){
       const scrollTop = $('body').scrollTop();
       let position = Math.round((scrollTop / this.state.domHeight) * 100);
-      if(position > 100) position = 100;
+      if(position > 98) position = 100;
       this.setState({
           completed: position + '%'
       });

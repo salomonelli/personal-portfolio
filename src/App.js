@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import DocumentTitle from 'react-document-title';
 import './roboto.css';
 import './App.css';
 
@@ -19,6 +20,9 @@ import FooterComponent from './components/footer/footer';
 class App extends Component {
     render() {
         return (
+          <DocumentTitle title="Sara Steiert">
+
+
             <MuiThemeProvider>
                 <div className="App">
                     <BrowserDetectComponent></BrowserDetectComponent>
@@ -75,6 +79,7 @@ class App extends Component {
                     </div>
                 </div>
             </MuiThemeProvider>
+            </DocumentTitle>
         );
     }
 }

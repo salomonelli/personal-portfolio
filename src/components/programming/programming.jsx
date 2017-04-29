@@ -10,7 +10,6 @@ class ProgrammingComponent extends Component {
             display: 'inline-block',
             background: '#263238'
         };
-
         return (
             <div className="programming">
               <p className="headline"> Programming skills</p>
@@ -39,7 +38,7 @@ class ProgrammingComponent extends Component {
                                         <ul className="no-top-padding">
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">ES.next</span>
+                                            <span className="html-2">JavaScript</span>
                                             &lt;/<span className="html-1">li</span>&gt;</li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
@@ -54,6 +53,16 @@ class ProgrammingComponent extends Component {
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
                                             <span className="html-2">Angular 2</span>
+                                            &lt;/<span className="html-1">li</span>&gt;
+                                          </li>
+                                          <li>
+                                            &lt;<span className="html-1">li</span>&gt;
+                                            <span className="html-2">Mocha</span>
+                                            &lt;/<span className="html-1">li</span>&gt;
+                                          </li>
+                                          <li>
+                                            &lt;<span className="html-1">li</span>&gt;
+                                            <span className="html-2">Webpack, Babel</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
