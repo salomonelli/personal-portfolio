@@ -41,11 +41,12 @@ class ContactComponent extends Component {
     onSubmit() {
         try {
             this.validateForm();
+            this.setState({successMessage: 'Your message has been sent.'});
+            this.setState({errorMessage: null});
         } catch (err) {
             this.setState({errorMessage: err.toString()});
+            this.setState({successMessage: null});
         }
-        this.setState({successMessage: 'Your message has been sent.'});
-        console.dir(this.state);
     }
     onUpdateField(field, event) {
         console.log('UPDATE FIELD');
