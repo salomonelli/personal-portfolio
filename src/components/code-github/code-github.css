@@ -4,12 +4,6 @@
     padding-top: 20px;
 }
 
-.github-img {
-    background: url('http://thecatapi.com/api/images/get?format=src&type=gif');
-    height: 100px;
-    width: 100px;
-}
-
 .teaser-img {
     float: left;
     height: 100%;
@@ -17,4 +11,7 @@
 
 .github-background-img {
     background: rgba(22, 21, 28, 0.84);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
