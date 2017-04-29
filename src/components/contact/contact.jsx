@@ -49,9 +49,7 @@ class ContactComponent extends Component {
         }
     }
     onUpdateField(field, event) {
-        console.log('UPDATE FIELD');
         this.setState({[field]: event.target.value});
-        console.dir(this.state);
     }
 
     render() {
@@ -93,11 +91,3 @@ class ContactComponent extends Component {
 }
 
 export default ContactComponent;
-
-/*
-<Avatar
-size={30}
->
-!
-</Avatar>
-*/

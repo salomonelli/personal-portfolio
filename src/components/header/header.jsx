@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ArrowIcon from 'material-ui/svg-icons/hardware/keyboard-arrow-down';
+import SquareAnimationComponent from '../square-animation/square-animation';
 const scrollTo = require('scroll-to');
 import './header.css';
-import FlippinBarsComponent from '../flippin-bars/flippin-bars';
 
 class HeaderComponent extends Component {
     constructor(props) {
@@ -40,8 +40,9 @@ class HeaderComponent extends Component {
     render() {
         return (
           <div className="header-wrapper" style={{"height": this.state.height}}>
+            <SquareAnimationComponent></SquareAnimationComponent>
+            <div className="cover"></div>
             <div className="header">
-              <FlippinBarsComponent></FlippinBarsComponent>
                 <h3>Sara Steiert</h3>
                 <h6>Software Developer</h6>
             </div>

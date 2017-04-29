@@ -1,31 +1,38 @@
 .header {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  color: white;
+}
+
+.cover {
+  height: 100%;
+  background: rgba(22, 21, 28, 0.76);
+  width: 100%;
+  position: absolute;
 }
 
 .header-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .scroll-down-btn {
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
 }
 
 .header h6 {
-    font-weight: 100;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .header h3 {
-    text-transform: uppercase;
-    letter-spacing: 9px;
+  text-transform: uppercase;
+  letter-spacing: 9px;
 }

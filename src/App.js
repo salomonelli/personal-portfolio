@@ -25,10 +25,9 @@ class App extends Component {
 
             <MuiThemeProvider>
                 <div className="App">
-                    <BrowserDetectComponent></BrowserDetectComponent>
                     <ProgressComponent></ProgressComponent>
                     <div className="section header-section">
-                        <div className="section-container">
+                        <div className="section-container header-component">
                             <HeaderComponent></HeaderComponent>
                         </div>
                     </div>

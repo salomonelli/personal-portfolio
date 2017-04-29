@@ -1,16 +1,11 @@
-.timeline {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
 .timeline p.headline {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .timeline-entry {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .timeline-entry:last-of-type {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }

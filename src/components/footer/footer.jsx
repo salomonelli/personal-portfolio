@@ -4,7 +4,7 @@ import FlatButton from 'material-ui/FlatButton';
 const scrollTo = require('scroll-to');
 
 class FooterComponent extends Component {
-    
+
     onScrollToTop() {
         scrollTo(0, 0, {
             ease: 'out-bounce',
@@ -16,13 +16,13 @@ class FooterComponent extends Component {
         return (
             <div className="footer">
               <div className="link-list">
-                <a href="">
+                <a href="https://github.com/salomonelli">
                   Github
-                </a> / <a href="">
+                </a> / <a href="https://twitter.com/salomonelli">
                   Twitter
-                </a> / <a href="">
+                </a> / <a href="https://www.xing.com/profile/Sara_Steiert">
                   Xing
-                </a> / <a href="">
+                </a> / <a href="https://www.linkedin.com/in/sara-steiert-b0a631134/">
                   LinkedIn
                 </a>
               </div>
