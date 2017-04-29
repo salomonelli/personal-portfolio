@@ -32,7 +32,7 @@ class HeaderComponent extends Component {
 
     render() {
         return (
-          <div style={{"height": this.state.height}}>
+          <div className="header-wrapper" style={{"height": this.state.height}}>
             <div className="header">
                 <h3>Sara Steiert</h3>
                 <h6>Software Developer</h6>

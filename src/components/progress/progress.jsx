@@ -29,18 +29,22 @@ class ProgressComponent extends Component {
 
     handleScroll(){
       const scrollTop = $('body').scrollTop();
-      const position = Math.round((scrollTop / this.state.domHeight) * 100);
-      if(position < 100) this.state.completed = position;
-      else this.state.completed = 100;
+      let position = Math.round((scrollTop / this.state.domHeight) * 100);
+      if(position > 100) position = 100;
+      this.setState({
+          completed: position + '%'
+      });
     }
 
 
     render() {
+        let progress = this.state.completed;
+        console.log(progress);
         return (
           <div className="progress">
             <div
               className="progress-bar"
-              style={{"width": this.state.completed}}>
+              style={{"width": progress}}>
             </div>
           </div>
         );

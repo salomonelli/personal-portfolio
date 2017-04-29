@@ -3,6 +3,13 @@
     padding-right: 5%;
 }
 
+.section-container {
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .section.colored {
     background: #D8AB94;
     /* background: #EBEBEB; */

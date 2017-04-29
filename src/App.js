@@ -24,34 +24,54 @@ class App extends Component {
                 <div className="App">
                     <ProgressComponent></ProgressComponent>
                     <div className="section header-section">
-                        <HeaderComponent></HeaderComponent>
+                        <div className="section-container">
+                            <HeaderComponent></HeaderComponent>
+                        </div>
                     </div>
                     <div className="section colored">
-                        <IntroductionComponent></IntroductionComponent>
+                        <div className="section-container">
+                            <IntroductionComponent></IntroductionComponent>
+                        </div>
                     </div>
                     <div className="section">
-                      <TimelineComponent></TimelineComponent>
+                        <div className="section-container">
+                            <TimelineComponent></TimelineComponent>
+                        </div>
                     </div>
                     <div className="section colored">
-                      <ProgrammingComponent></ProgrammingComponent>
+                        <div className="section-container">
+                            <ProgrammingComponent></ProgrammingComponent>
+                        </div>
                     </div>
                     <div className="section">
-                      <AgileQuoteComponent></AgileQuoteComponent>
+                        <div className="section-container">
+                            <AgileQuoteComponent></AgileQuoteComponent>
+                        </div>
                     </div>
                     <div className="section colored">
-                      <AgileComponent></AgileComponent>
+                        <div className="section-container">
+                            <AgileComponent></AgileComponent>
+                        </div>
                     </div>
                     <div className="section">
-                      <DesignComponent></DesignComponent>
+                        <div className="section-container">
+                            <DesignComponent></DesignComponent>
+                        </div>
                     </div>
                     <div className="section colored">
-                      <CodeGithubComponent></CodeGithubComponent>
+                        <div className="section-container">
+                            <CodeGithubComponent></CodeGithubComponent>
+                        </div>
                     </div>
                     <div className="section">
-                        <ContactComponent></ContactComponent>
+                        <div className="section-container">
+                            <ContactComponent></ContactComponent>
+                        </div>
                     </div>
                     <div className="section colored">
-                        <FooterComponent></FooterComponent>
+                        <div className="section-container">
+                            <FooterComponent></FooterComponent>
+                        </div>
                     </div>
                 </div>
             </MuiThemeProvider>

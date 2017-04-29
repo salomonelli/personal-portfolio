@@ -6,6 +6,7 @@
     "jquery": "^3.2.1",
     "material-ui": "^0.17.4",
     "react": "^15.5.4",
+    "react-document-meta": "^2.1.2",
     "react-dom": "^15.5.4",
     "react-tap-event": "^1.0.3",
     "react-tap-event-plugin": "^2.0.1",

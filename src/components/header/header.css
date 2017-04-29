@@ -3,8 +3,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 90%;
+    width: 100%;
     color: white;
+}
+
+.header-wrapper {
+    position: relative;
 }
 
 .scroll-down-btn {
@@ -12,7 +16,7 @@
     position: absolute;
     bottom: 20px;
     text-align: center;
-    width: 90%;
+    width: 100%;
 }
 
 .header h6 {
