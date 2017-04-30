@@ -58,7 +58,7 @@ class App extends Component {
               <ProgrammingComponent></ProgrammingComponent>
             </div>
           </div>
-          <div className="section">
+          <div className="section dark">
             <div className="section-container">
               <AgileQuoteComponent></AgileQuoteComponent>
             </div>

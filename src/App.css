@@ -75,3 +75,7 @@ p.headline {
 p.text-justify {
   text-align: justify;
 }
+
+p.text-center {
+  text-align: center;
+}
