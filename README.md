@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="icon.png" width="400px" />
+  <img src="icon.png" width="150px" />
 </p>
 
 # personal-portfolio
