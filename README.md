@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="icon.png" width="400px" />
+</p>
+
 # personal-portfolio
 
 [Demo](https://salomonelli.github.io/personal-portfolio/)
