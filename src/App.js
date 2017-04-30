@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {Helmet} from 'react-helmet';
 import 'roboto-npm-webfont';
 import './App.css';
 
@@ -24,13 +23,6 @@ class App extends Component {
       <MuiThemeProvider>
         <div className="App">
           <BrowserDetectComponent></BrowserDetectComponent>
-          <Helmet>
-            <meta charSet="utf-8"/>
-            <title>Sara Steiert - Software Developer</title>
-            <meta name="description" content="Sara Steiert - Software Developer. Loves JavaScript, cats and eating. Professional Software Developer."/>
-            <meta name="keywords" content="software developer, web development, javascript, react, material ui" />
-            <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
-          </Helmet>
           <ProgressComponent></ProgressComponent>
           <div className="section header-section">
             <div className="section-container header-component">
