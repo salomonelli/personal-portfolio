@@ -37,13 +37,7 @@ class App extends Component {
               <HeaderComponent></HeaderComponent>
             </div>
           </div>
-          <div className="section dark">
-            <div className="section-container">
-              <DarkVoiceComponent></DarkVoiceComponent>
-            </div>
-          </div>
           <div className="section colored">
-
             <div className="section-container">
               <IntroductionComponent></IntroductionComponent>
             </div>
@@ -53,24 +47,30 @@ class App extends Component {
               <TimelineComponent></TimelineComponent>
             </div>
           </div>
+          <div className="section dark">
+            <div className="section-container">
+              <DarkVoiceComponent></DarkVoiceComponent>
+            </div>
+          </div>
           <div className="section colored">
             <div className="section-container">
               <ProgrammingComponent></ProgrammingComponent>
             </div>
           </div>
-          <div className="section dark">
+          <div className="section">
             <div className="section-container">
-              <AgileQuoteComponent></AgileQuoteComponent>
+              <DesignComponent></DesignComponent>
             </div>
           </div>
+
           <div className="section colored">
             <div className="section-container">
               <AgileComponent></AgileComponent>
             </div>
           </div>
-          <div className="section">
+          <div className="section dark">
             <div className="section-container">
-              <DesignComponent></DesignComponent>
+              <AgileQuoteComponent></AgileQuoteComponent>
             </div>
           </div>
           <div className="section colored">
