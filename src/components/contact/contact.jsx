@@ -42,6 +42,8 @@ class ContactComponent extends Component {
     }
 
   async onSubmit() {
+    this.setState({successMessage: null});
+    this.setState({errorMessage: null});
     this.displayLoadingBar();
     try {
       if (this.state.messageAlreadySent)
@@ -49,7 +51,6 @@ class ContactComponent extends Component {
       this.validateForm();
       await this.submitData();
       this.setState({successMessage: 'Your message has been sent.'});
-      this.setState({errorMessage: null});
       this.setState({messageAlreadySent: true});
     } catch (err) {
       this.setState({errorMessage: err.toString()});
