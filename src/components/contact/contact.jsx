@@ -38,9 +38,10 @@ class ContactComponent extends Component {
             throw new Error('Please enter a message.');
         }
 
-    onSubmit() {
+    async onSubmit() {
         try {
             this.validateForm();
+            await this.submitData();
             this.setState({successMessage: 'Your message has been sent.'});
             this.setState({errorMessage: null});
         } catch (err) {
@@ -48,6 +49,22 @@ class ContactComponent extends Component {
             this.setState({successMessage: null});
         }
     }
+
+    submitData() {
+      return fetch('https://gitter-connect.herokuapp.com/api/message', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body:{
+          name: this.state.name,
+          email: this.state.name,
+          message: this.state.message
+        }
+      });
+    }
+
     onUpdateField(field, event) {
         this.setState({[field]: event.target.value});
     }
