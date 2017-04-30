@@ -7,6 +7,7 @@ import './App.css';
 import ProgressComponent from './components/progress/progress';
 import BrowserDetectComponent from './components/browser-detect/browser-detect';
 import HeaderComponent from './components/header/header';
+import DarkVoiceComponent from './components/dark-voice/dark-voice';
 import IntroductionComponent from './components/introduction/introduction';
 import TimelineComponent from './components/timeline/timeline';
 import ProgrammingComponent from './components/programming/programming';
@@ -36,7 +37,13 @@ class App extends Component {
               <HeaderComponent></HeaderComponent>
             </div>
           </div>
+          <div className="section dark">
+            <div className="section-container">
+              <DarkVoiceComponent></DarkVoiceComponent>
+            </div>
+          </div>
           <div className="section colored">
+
             <div className="section-container">
               <IntroductionComponent></IntroductionComponent>
             </div>

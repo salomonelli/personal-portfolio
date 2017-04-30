@@ -14,7 +14,7 @@ class CodeGithubComponent extends Component {
     render() {
         return (
             <div className="code-github">
-              <p className="headline">Look at my code</p>
+              <p className="headline">Look at my code, my code is amazing</p>
                 <Card>
                   <CardHeader
                     subtitle="Github Repository"

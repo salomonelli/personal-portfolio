@@ -1,0 +1,21 @@
+.footer {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.link-list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.link-list a {
+  color: rgba(22, 21, 28, 0.73);
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.link-list a:first-of-type {
+  margin-left: 0;
+}

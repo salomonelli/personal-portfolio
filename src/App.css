@@ -30,6 +30,7 @@ p {
 .section {
   padding-left: 5%;
   padding-right: 5%;
+  position: relative;
 }
 
 .section-container {
@@ -39,6 +40,10 @@ p {
   margin-right: auto;
   padding-top: 160px;
   padding-bottom: 160px;
+}
+
+.section.dark {
+  background: #16151C;
 }
 
 .section-container.header-component {
@@ -64,7 +69,7 @@ p.headline {
 }
 
 .header-section {
-  background: #16151C;
+  background: white;
 }
 
 p.text-justify {

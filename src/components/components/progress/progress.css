@@ -1,0 +1,15 @@
+.progress {
+    height: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 0;
+    background: #A80202;
+    background: #A80202;
+    height: 5px;
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+}

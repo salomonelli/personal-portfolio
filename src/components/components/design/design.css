@@ -1,0 +1,12 @@
+.design-checkbox {
+  margin-bottom: 20px;
+}
+
+.design-checkbox:last-of-type {
+  margin-bottom: 0;
+}
+
+.design .title {
+  margin-top: 0;
+  padding-top: 0;
+}

@@ -1,0 +1,23 @@
+.timeline p.headline {
+  margin-top: 0;
+}
+
+.timeline-entry {
+  margin-bottom: 10px;
+}
+
+.timeline-entry:last-of-type {
+  margin-bottom: 0px;
+}
+
+.timeline-entry-chip {
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.timeline-entries {
+  display: inline-block;
+  margin-top: 20px;
+}

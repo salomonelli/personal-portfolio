@@ -1,0 +1,10 @@
+.dark-voice {
+  color: rgba(255, 255, 255, 0.51);
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.dark-voice-tag {
+  font-size: 18pt;
+  font-weight: 500;
+}
