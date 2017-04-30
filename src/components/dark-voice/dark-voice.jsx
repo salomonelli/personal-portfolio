@@ -4,16 +4,10 @@ import MicrophoneIcon from 'material-ui/svg-icons/av/mic';
 import MicrophoneOffIcon from 'material-ui/svg-icons/av/mic-off';
 import  {Howl} from 'howler';
 import './dark-voice.css';
-console.log('aaa');
-console.dir(Howl);
-
 
 const darkVoiceSound = new Howl({
   src: ['dark-voice.mp3']
 });
-
-
-
 
 class DarkVoiceComponent extends Component {
     constructor(props) {
@@ -41,15 +35,11 @@ class DarkVoiceComponent extends Component {
         return (
             <div className="dark-voice">
               <p className="text-center">
-                <p className="text-center dark-voice-text-tag">
-                  <b className="dark-voice-tag">&#x3C;darkVoice&#x3E; </b>
-                </p>
+                  <b className="dark-voice-tag">&#x3C;darkVoice&#x3E; </b><br/>
                 In the world of 1000 frameworks, I'm fighting for the cause of
                 clean and well structured code. No bug can stop me. No build-tool will dominate me.
-                When the tests fail and the linting breaks, I will remain.
-                  <p className="text-center dark-voice-text-tag">
+                When the tests fail and the linting breaks, I will remain.<br/>
                     <b className="dark-voice-tag">&#x3C;/darkVoice&#x3E;</b>
-                  </p>
               </p>
               <div className="microphone-action">
                 { !this.state.sound &&
