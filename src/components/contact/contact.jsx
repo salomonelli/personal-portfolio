@@ -12,7 +12,8 @@ class ContactComponent extends Component {
             message: '',
             email: '',
             errorMessage: null,
-            successMessage: null
+            successMessage: null,
+            messageAlreadySent: false
         }
     }
 
@@ -40,10 +41,13 @@ class ContactComponent extends Component {
 
     async onSubmit() {
         try {
+            if(this.state.messageAlreadySent)
+              throw new Error('Your message has been already sent.');
             this.validateForm();
             await this.submitData();
             this.setState({successMessage: 'Your message has been sent.'});
             this.setState({errorMessage: null});
+            this.setState({messageAlreadySent:true});
         } catch (err) {
             this.setState({errorMessage: err.toString()});
             this.setState({successMessage: null});
@@ -57,12 +61,14 @@ class ContactComponent extends Component {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
         },
-        body:{
+        body:JSON.stringify({
           name: this.state.name,
           email: this.state.name,
           message: this.state.message
-        }
-      });
+        })
+      })
+      .then(res => console.dir(res))
+      .catch(e => console.dir(e)) ;
     }
 
     onUpdateField(field, event) {
