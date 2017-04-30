@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import isEmail from 'validator/lib/isEmail';
+import LinearProgress from 'material-ui/LinearProgress';
 import './contact.css';
 
 class ContactComponent extends Component {
@@ -41,6 +42,7 @@ class ContactComponent extends Component {
     }
 
   async onSubmit() {
+    this.displayLoadingBar();
     try {
       if (this.state.messageAlreadySent)
         throw new Error('Your message has been already sent.');
@@ -53,6 +55,7 @@ class ContactComponent extends Component {
       this.setState({errorMessage: err.toString()});
       this.setState({successMessage: null});
     }
+    this.displayLoadingBar(false);
   }
 
   submitData() {
@@ -69,6 +72,9 @@ class ContactComponent extends Component {
   onUpdateField(field, event) {
     this.setState({[field]: event.target.value});
   }
+  displayLoadingBar(to = true) {
+    this.setState({loading: to});
+  }
 
   render() {
     return (
@@ -76,35 +82,39 @@ class ContactComponent extends Component {
       <div className="contact">
         <p className="headline">Contact</p>
         <p>Are you nosy? Then write me a message:</p>
-        <TextField hintText="Name" floatingLabelText="Name" style={{
-          "width": "100%"
-        }} floatingLabelFocusStyle={{
-          "color": "#A80202"
-        }} underlineFocusStyle={{
-          "borderColor": "#A80202"
-        }} onChange={e => this.onUpdateField('name', e)}/>
-        <TextField hintText="E-mail" floatingLabelText="E-mail" type="email" style={{
-          "width": "100%"
-        }} floatingLabelFocusStyle={{
-          "color": "#A80202"
-        }} underlineFocusStyle={{
-          "borderColor": "#A80202"
-        }} onChange={e => this.onUpdateField('email', e)}/>
-        <TextField hintText="Your message" floatingLabelText="Your message" style={{
-          "width": "100%"
-        }} multiLine={true} rows={2} floatingLabelFocusStyle={{
-          "color": "#A80202"
-        }} underlineFocusStyle={{
-          "borderColor": "#A80202"
-        }} onChange={e => this.onUpdateField('message', e)}/> {this.state.errorMessage != null && <p className="error-message message">{this.state.errorMessage}</p>
-}
-        {this.state.successMessage != null && <p className="success-message message">{this.state.successMessage}</p>
-}
+          <TextField hintText="Name" floatingLabelText="Name" style={{
+            "width": "100%"
+          }} floatingLabelFocusStyle={{
+            "color": "#A80202"
+          }} underlineFocusStyle={{
+            "borderColor": "#A80202"
+          }} onChange={e => this.onUpdateField('name', e)}/>
+          <TextField hintText="E-mail" floatingLabelText="E-mail" type="email" style={{
+            "width": "100%"
+          }} floatingLabelFocusStyle={{
+            "color": "#A80202"
+          }} underlineFocusStyle={{
+            "borderColor": "#A80202"
+          }} onChange={e => this.onUpdateField('email', e)}/>
+          <TextField hintText="Your message" floatingLabelText="Your message" style={{
+            "width": "100%"
+          }} multiLine={true} rows={2} floatingLabelFocusStyle={{
+            "color": "#A80202"
+          }} underlineFocusStyle={{
+            "borderColor": "#A80202"
+          }} onChange={e => this.onUpdateField('message', e)}/> {this.state.errorMessage != null && <p className="error-message message">{this.state.errorMessage}</p>
+          }
+          {this.state.successMessage != null && <p className="success-message message">{this.state.successMessage}</p>
+          }
 
-        <div className="contact-btn">
-          <RaisedButton label="Send message" onClick={this.onSubmit.bind(this)} backgroundColor="#A80202" labelColor="#ffffff"/>
-        </div>
+          {
+            this.state.loading &&
+            <LinearProgress mode="indeterminate" color="#A80202"/>
+          }
 
+          <div className="contact-btn">
+            <RaisedButton label="Send message" onClick={this.onSubmit.bind(this)} backgroundColor="#A80202" labelColor="#ffffff"/>
+          </div>
       </div>
     );
   }
