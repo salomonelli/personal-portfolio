@@ -66,7 +66,7 @@ class ContactComponent extends Component {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({name: this.state.name, email: this.state.name, message: this.state.message})
+      body: JSON.stringify({name: this.state.name, email: this.state.email, message: this.state.message})
     }).then(res => console.dir(res)).catch(e => console.dir(e));
   }
 
