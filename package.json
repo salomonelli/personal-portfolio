@@ -1,7 +1,7 @@
 {
   "name": "personal-portfolio",
   "homepage": "https://salomonelli.github.io/personal-portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "clone": "2.1.1",
