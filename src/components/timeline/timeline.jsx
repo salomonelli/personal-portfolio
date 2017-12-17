@@ -61,12 +61,44 @@ class TimelineComponent extends Component {
         return (
             <div className="timeline">
               <p className="headline">Working experience</p>
+                <div className="timeline-entry">
+                  <Card>
+                      <CardHeader title="Technology Consulting Analyst" subtitle="Accenture"/>
+                      <CardText expandable={true}>
+                          October	2016 - October 2017. Development of Microservices, UX-Consulting.
+                          <br/><br/>
+                            <div className="timeline-entries">
+                              <div className="timeline-entry-chip">
+                                <Chip>Angular 2</Chip>
+                              </div>
+                              <div className="timeline-entry-chip">
+                                <Chip>Docker</Chip>
+                              </div>
+                              <div className="timeline-entry-chip">
+                                <Chip>Jenkins</Chip>
+                              </div>
+                              <div className="timeline-entry-chip">
+                                <Chip>LESS</Chip>
+                              </div>
+                              <div className="timeline-entry-chip">
+                                <Chip>Java Spring</Chip>
+                              </div>
+                              <div className="timeline-entry-chip">
+                                <Chip>Foundation, Bootstrap</Chip>
+                              </div>
+                              <div className="timeline-entry-chip">
+                                <Chip>Confluence, JIRA</Chip>
+                              </div>
+                            </div>
+                      </CardText>
+                  </Card>
+                </div>
                   <div className="timeline-entry">
                     <Card expanded={this.state.expanded1} onExpandChange={this.handleExpandChange}>
                         <CardHeader title="Software Developer" subtitle="Testo	SE	&	Co.	KGaA"
                           actAsExpander={true} showExpandableButton={true}/>
                         <CardText expandable={true}>
-                            since	October	2016. Development of Microservices, UX-Consulting.
+                            October	2016 - October 2017. Development of Microservices, UX-Consulting.
                             <br/><br/>
                               <div className="timeline-entries">
                                 <div className="timeline-entry-chip">
