@@ -43,9 +43,7 @@ class BrowserDetectComponent extends Component {
                 modal={true}
                 open={this.state.open}
               >
-                If you are really using <b>Internet Explorer</b> or <b>Edge</b>, I really feel sorry for you.
-                <br/><br/>
-                I hate both browsers. That is why I don't support them.
+               Internet Explorer and Edge are not supported. Same for Safari :)
               </Dialog>
           </div>
         );
